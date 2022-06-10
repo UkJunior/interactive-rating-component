@@ -29,4 +29,5 @@ if(event.target.classList.contains("rating-no")){
 else{
     event.target.classList.remove("active");
 }
+
 }

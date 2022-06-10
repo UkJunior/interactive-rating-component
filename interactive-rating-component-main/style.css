@@ -11,47 +11,56 @@
     --fw-body: 400;
     --fw-bold: 700;
     }
-    /* *{
+
+    *{
         padding: 0;
         margin: 0;
         box-sizing:border-box ;
-    } */
-    html,
+    }
+    /* html,
     body{
      height: 100%;   
-    }
+    } */
     body{
         background-color: var(--clr-Very-Dark-Blue);
         font-weight: 400;
+        max-width: 1440px;
+        font-size: 0.8rem;
+         margin-top: 12em;
         font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif;
-font-family: 'Overpass', sans-serif;
+        font-family: 'Lexend Deca', sans-serif;
+        font-family: 'Overpass', sans-serif;
+
     }
     
     .card_1{
         background-color: var(--clr-Dark-Blue);
-        max-width: 20em;
-        margin: 6em auto ;
+        width: 100%;
+        max-width: 27em;
+        margin: 9.2em auto ;
         padding: 2em;
         border-radius: 2em;
-    
     }
+    
     .circle{
         /* max-width: fit-content; */
         background-color: var(--clr-Very-Dark-Blue);
-        width: 20px;
         color: var(--clr-Light-Grey);
         border-radius: 50%;
-        padding: 15px;
+        padding: 1em;
+        margin-bottom: 0.8em;
         text-align: center;
     }
+
     .des-Question h1{
-    color: var(--clr-White);
-    font-size: 1.7em;
-    
+        color: var(--clr-White);
+        font-size: 1.7em;
+        margin: 0.5em 0;
     }
     .des-Question p{
         color: var(--clr-Light-Grey);
+        line-height: 1.5;
+        margin-bottom: 1.5em;
     }
     
     .rating{
@@ -62,10 +71,10 @@ font-family: 'Overpass', sans-serif;
 
     .rating-no{
         background-color: var(--clr-Very-Dark-Blue);
-         width: 20px;
          color: var(--clr-Light-Grey);
         border-radius: 50%;
-        padding: 15px;
+        padding: 1em 1.4em ;
+        margin-bottom: 0.5em;
         text-align: center; 
         cursor: pointer;
     }
@@ -83,9 +92,9 @@ font-family: 'Overpass', sans-serif;
         width: 100%;
         padding: 1em 0em;
         background-color: var(--clr-Orange);
-        /* border-style: none; */
         border-radius: 2em;
-        border: 1px solid black;
+        border: 0.1px solid var(--clr-Orange);
+        outline: none;
         cursor: pointer;
         color: var(--clr-White);
         text-transform: uppercase;
@@ -94,37 +103,40 @@ font-family: 'Overpass', sans-serif;
     .btn:hover{
         background-color: var(--clr-White);
         color: var(--clr-Orange);
-        
+        border: 0.1px solid var(--clr-White);
     }
+
     .card_2{
     background-color: var(--clr-Dark-Blue);
+    max-width: 26em;
+    margin: 3em auto ;
+    padding: 2em;
     display: block;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    max-width: 20.2em;
-    margin: 8em auto ;
-    padding: 2em;
+    /* align-items: center; */
     border-radius: 2em;
     color: var(--clr-White);
     }
     
     .rating-section {
-    /* border: 1px solid var(--clr-Very-Dark-Blue); */
     background-color: var(--clr-Very-Dark-Blue);
     border-radius: 2em;
-    margin: 1.6em 2em 1.8em 2em;
+    margin: 1.6em 4.5em 1.8em 4.5em;
     color: var(--clr-Orange);    
 }
+
 .rating-section >p{
     padding: 0.5em 0em;
-    /* margin: 0em 0.5em; */
 }
+
 .thank-you-sec > h1{
-    /* border: 1px solid red; */
+    margin-bottom: 0.3em;
 }
+
 .thank-you-sec > p{
     color: var(--clr-Light-Grey);
+    line-height: 1.5;
 
     }
 
@@ -133,53 +145,3 @@ font-family: 'Overpass', sans-serif;
     }
 
 
-    @media (max-width: 1440px){
-        *{
-            padding: 0;
-            margin: 0;
-
-        }
-    .card_2{
-    max-width: 22em ;
-    /* width: 40em; */
-    /* border: 1px solid red; */
-    margin-top:14%;
-    /* font-size: 15px; */
-    /* padding: 0em 3em; */
-        }
-        
- .circle{
-     
-}
-.des-Question{
-     padding-bottom: 0.6em;
-     padding-top: 0.6em;
-     line-height: 1.5em;
-     font-size: 15px;    }
-    .rating{
-                padding-bottom: 0.6em;
- }
- .btn{
-    padding: 1.1em 0em;
- }
- .card_2{
-     margin-top: 13.8%;
-     padding: 1.8em;
-    /* font-size: 15px; */
- }
- .thank-you-image{
-     padding-top: 
-     1em;
- }
- .thank-you-sec > h1{
-     
-     font-size: 25px;
-     font-weight: 700;
-     
- }
-.thank-you-sec > p{
-    margin-top: 0.8em;
-    margin: 0em -0.3em;
-   
-} 
-    }
